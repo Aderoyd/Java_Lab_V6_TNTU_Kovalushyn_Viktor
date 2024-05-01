@@ -1,0 +1,6 @@
+Марка: Toyota, Номер: ABC123, Власник: Smith
+Марка: Honda, Номер: XYZ456, Власник: Johnson
+Марка: Toyota, Номер: DEF789, Власник: Brown
+Марка: Ford, Номер: GHI101, Власник: Davis
+Марка: Honda, Номер: JKL202, Власник: Martinez
+
