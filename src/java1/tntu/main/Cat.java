@@ -1,5 +1,7 @@
 package java1.tntu.main;
 
+import java.util.*;
+
 public abstract class Cat {
     private String Name;
     private int age;
@@ -35,7 +37,21 @@ public abstract class Cat {
     }
 
     @Override
+    public int hashCode() {
+        return Objects.hash(Name, age);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        ScotlandCat cat = (ScotlandCat) obj;
+        return age == cat.getAge() &&
+                Objects.equals(Name, cat.getName());
+    }
+    @Override
     public String toString() {
         return this.getClass().getSimpleName() + "Apex cat: name = " + Name + ", " + "age = " + age;
     }
 }
+
